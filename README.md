@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://res.cloudinary.com/naptest/image/upload/v1645189832/minact_avfrdg.png">
+</p>
+
 # Minact
 
 [![Build Size](https://img.shields.io/bundlephobia/minzip/minact?label=Bundle%20size&style=flat&color=success)](https://bundlephobia.com/result?p=minact)
@@ -5,6 +9,10 @@
 [![Downloads](https://img.shields.io/npm/dt/minact.svg?style=flat&color=success)](https://www.npmjs.com/package/minact)
 
 A simple react state management library without a provider
+
+## Demo
+
+[https://codesandbox.io/s/minact-demo-b3f6nd](https://codesandbox.io/s/minact-demo-b3f6nd?file=/src/store/index.js)
 
 ## Installation
 
