@@ -24,7 +24,7 @@ import { createStore } from "minact";
 export const { useSelector, useDispatch } = createStore(
   { count: 0 },
   (set, get) => ({
-    increase: (amount?: number) => set({ count: get().count + (amount || 1) }),
+    increase: (amount) => set({ count: get().count + (amount || 1) }),
   })
 );
 ```
@@ -95,7 +95,7 @@ const App = () => {
 
 ```javascript
 const store = createStore({ count: 0 }, (set, get) => ({
-  increase: (amount?: number) => set({ count: get().count + (amount || 1) }),
+  increase: () => set({ count: get().count + 1 }),
 }));
 
 // Subscribe to store changes and log the state
@@ -104,3 +104,15 @@ const unsubscribe = store.subscribe(() => console.log(store.get()));
 // Unsubscribe from changes
 unsubscribe();
 ```
+
+### Scales very well
+
+```
+src
+│── store
+│   │── user-store.js
+│   │── count-store.js
+│   │── any-store.js
+```
+
+You can create as many store as you want, they will work independently from each other
